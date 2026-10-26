@@ -93,19 +93,11 @@
     git submodule update --init --recursive
     ```
 
-- Install Conda: please see https://docs.conda.io/en/latest/miniconda.html
-- Create Conda env:
+- Install uv: please see https://docs.astral.sh/uv/getting-started/installation/
+- Run uv:
 
     ``` sh
-    conda create -n cosyvoice -y python=3.10
-    conda activate cosyvoice
-    pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
-
-    # If you encounter sox compatibility issues
-    # ubuntu
-    sudo apt-get install sox libsox-dev
-    # centos
-    sudo yum install sox sox-devel
+    uv sync
     ```
 
 ### Model download
